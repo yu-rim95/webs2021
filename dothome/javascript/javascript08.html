@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+</head>
+
+<body>
+    <script>
+        //선언적 함수 -가장기본함수- 재활용가능 
+        function func1() {
+
+            document.write("func1이 실행되었습니다.<br>");
+        }
+        func1();
+
+        //익명함수 이름이없는형태의 함수 함수의이름이 변수의이름을대체
+        const func2 = function() {
+            document.write("func2이 실행되었습니다.<br>");
+        }
+        func2();
+        //매개변수가 있는 함수  ( 변수의값이 전달되는거)
+        function func3(name) {
+            document.write(name)
+        }
+        func3("func3이 실행되었습니다.<br>");
+        
+        //리턴값(결과값)이 있는 함수 
+        function func4() {
+            const str = "func4이 실행되었습니다.<br>"; //변수
+            return str; //결과값
+        }
+        document.write(func4());
+
+    </script>
+</body>
+
+</html>

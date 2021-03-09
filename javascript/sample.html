@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang=ko>
+
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+</head>
+
+<body>
+
+    <script>
+        //배열 
+        let arr1 = new Array();
+        let arr2 = new Array(100, 200, 300);
+        let arr3 = [];
+        let arr4 = [100, 200, 300];
+
+        //배열 길이 구하기 
+        document.write(arr4.length,"<br>");
+        
+        //배열 데이터 가져오기
+        let arr6 = [100,200,300,400,500,600,700,800,900];
+        //출력
+        //document.write(arr6[0],"<br>");
+        //document.write(arr6[1],"<br>");
+        //document.write(arr6[2],"<br>");
+        //document.write(arr6[3],"<br>");
+        //document.write(arr6[4],"<br>");
+        //document.write(arr6[5],"<br>");
+        //document.write(arr6[6],"<br>");
+        //document.write(arr6[7],"<br>");
+        //document.write(arr6[8],"<br><br>");
+       
+        //for 문 
+        for(let i=0; i<arr6.length; i++){
+           document.write(arr6[i],"<br>");
+       }
+        
+       //i=0 0<10 documenr.write(arr6[0]) -> 100
+       //i=1 1<10 documenr.write(arr6[1]) -> 200
+       //i=3 3<10documenr.write(arr6[03]) -> 300
+       //i=4 4<10documenr.write(arr6[04]) -> 400
+       //i=5 5<10documenr.write(arr6[05]) -> 500
+       //i=6 6<10documenr.write(arr6[06]) -> 600
+       //i=7 7<10documenr.write(arr6[07]) -> 700
+       //i=8 8<10documenr.write(arr6[08]) -> 800
+       //i=9 9<10documenr.write(arr6[09]) -> 900
+      
+       //for Each
+       const arr7 = [100,200,300,400,500];
+      // arr7forEach(function(elenm){
+       //  document.write(elem);
+       //})
+
+       arr7.forEach(function(elemnt,index,array){
+
+         document.write(elemnt,"<br>");
+         document.write(index,"<br>");
+         document.write(array,"<br>");
+
+       });
+      
+       //map
+      
+       const arr8 = [100,200,300,400,500];
+       
+       arr8.map(function(elem){
+       document.write(elem,"<br>");  
+
+       });
+
+
+    </script>
+
+
+</body>
+
+</html>
